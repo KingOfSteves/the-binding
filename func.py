@@ -146,12 +146,6 @@ def loadFloor(name, index, size, sounds, textures):
 def loadTexture(name, dir="", double=True):
 	# Load texture and double its size
 
-	if dir != "":
-		t = image.load(os.path.join('res', 'textures', dir, name))
-
-	else:
-		t = image.load(os.path.join('res','textures', name))
-
 	w = t.get_width()
 	h = t.get_height()
 
